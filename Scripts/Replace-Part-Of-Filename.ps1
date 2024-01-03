@@ -16,7 +16,7 @@ $replace = ''
 if (! (Test-Path -Path $path)) {
     Write-Host 'Directory path is invalid or not defined' -ForegroundColor Yellow
 } else {
-    Get-ChildItem -Path $path -Filter '*.ini' -Recurse | ForEach-Object {
+    Get-ChildItem -Path $path -Filter '*.*' -Recurse | ForEach-Object {
         Rename-Item -Path $_.FullName -NewName $_.Name.Replace($partial, $replace)
     }
 }
