@@ -6,7 +6,7 @@
 .EXAMPLE
     PS C:\> .\Compress-7z.ps1
 .LINK
-    https://github.com/fabianosrc/PowerShell/Scripts/Compress-7z.ps1
+    https://github.com/fabianosrc/PowerShell
 #>
 
 $BackupDirectory = ''
